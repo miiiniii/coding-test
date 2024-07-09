@@ -55,14 +55,17 @@ def dfs(count):
         for i in range(n):
             for j in range(m):
                 temp[i][j] = data[i][j]
+
         # 각 바이러스의 위치에서 전파 진행
         for i in range(n):
             for j in range(m):
                 if temp[i][j] == 2:
                     virus(i, j)
+
         # 안전 영역의 최대값 계산
         result = max(result, get_score())
         return
+    
     # 빈 공간에 울타리를 설치
     for i in range(n):
         for j in range(m):
