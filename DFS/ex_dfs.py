@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 def dfs(graph, v, visited):
     # 현재 노드를 방문 처리
     visited[v] = True
@@ -27,5 +24,3 @@ graph = [
 visited = [False] * 9   # 노드의 방문 정보 담을 리스트. 노드0 ~ 노드8까지 총 9개 (단, 이 예시에서 노드 0은 없음)
 
 dfs(graph, 1, visited)
-end_time = time.time()
-print("run time: ", end_time - start_time)
