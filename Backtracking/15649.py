@@ -7,7 +7,7 @@ def backtracking():
 # 탈출 조건 세우기
     if len(answer) == m:
         # 출력하고 끝내기
-        print(" ".join(map(str, answer)))    # 공백 없이 문자열 형태로 붙여서 출력
+        print(" ".join(map(str, answer)))    # 공백 한칸 문자열 형태로 붙여서 출력
         return
 
 # 중복 숫자가 있는지 확인
